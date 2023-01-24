@@ -26,7 +26,8 @@
                 <div class="tasks-container">
                     <ul>
                         <li class="task" v-for="(todo, index) in todos"
-                        :class="{ done: todo.done }">
+                        :class="{ done: todo.done }"
+                        @click="changeTaskStatus(index)">
                             {{ todo.text }}
                             <i class="fas fa-times" @click="removeTask(index)"></i>
                         </li>

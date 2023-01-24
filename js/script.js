@@ -42,7 +42,16 @@ createApp({
             this.newTask = '';
             }
 
+        },
+        changeTaskStatus(index) {
+            if (this.todos[index].done == true) {
+                this.todos[index].done = false
+            }
+            else {
+                this.todos[index].done = true
+            }
         }
+
 
     }
 
