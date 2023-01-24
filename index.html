@@ -25,10 +25,10 @@
 
                 <div class="tasks-container">
                     <ul>
-                        <li class="task" v-for="todo in todos"
+                        <li class="task" v-for="(todo, index) in todos"
                         :class="{ done: todo.done }">
                             {{ todo.text }}
-                            <i class="fas fa-times"></i>
+                            <i class="fas fa-times" @click="removeTask(index)"></i>
                         </li>
                     </ul>
                 </div>
