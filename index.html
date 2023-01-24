@@ -19,7 +19,7 @@
                     <img src="img/logo.png" alt="">
                 </div>
                 <div class="new-task">
-                    <input type="text" v-model="newTask">
+                    <input type="text" v-model="newTask" @keyup.enter="addNewTask">
                     <button @click="addNewTask">Aggiungi</button>
                 </div>
 
