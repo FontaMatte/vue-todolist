@@ -19,8 +19,8 @@
                     <img src="img/logo.png" alt="">
                 </div>
                 <div class="new-task">
-                    <input type="text">
-                    <button>Aggiungi</button>
+                    <input type="text" v-model="newTask">
+                    <button @click="addNewTask">Aggiungi</button>
                 </div>
 
                 <div class="tasks-container">

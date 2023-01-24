@@ -22,7 +22,8 @@ createApp({
                 text : 'stendere i panni',
                 done : false
                 }
-            ]
+            ],
+            newTask : ''
         };
 
     },
@@ -30,7 +31,17 @@ createApp({
     methods: {
 
         removeTask(index) {
+
             this.todos.splice(index, 1);
+
+        },
+        addNewTask() {
+
+            if(this.newTask != '') {
+            this.todos.push({text:this.newTask, done:false});
+            this.newTask = '';
+            }
+
         }
 
     }
