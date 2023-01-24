@@ -1,0 +1,69 @@
+/* REGOLE DI RESET  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* REGOLE GENERALI */
+.container {
+    width: 1100px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.logo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.logo img {
+    width: 30%;
+}
+
+.new-task {
+    text-align: center;
+}
+
+.new-task input {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-width: 1px;
+    min-width: 300px;
+}
+
+.new-task button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+.tasks-container {
+    margin: 40px;
+    border-radius: 10px;
+    background-color: #f5f7f7;
+    padding: 30px;
+}
+
+.tasks-container ul {
+    list-style: none;
+}
+
+.task {
+    border-bottom:  1px solid #dadee1;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.task:hover {
+    background: white;
+}
+
+.task i {
+    float: right;
+}
+
+.done {
+    text-decoration: line-through;
+  }
